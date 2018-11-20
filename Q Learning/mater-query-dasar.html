@@ -148,10 +148,15 @@
 
 								<!-- Description -->
 								<div class="tab_panel active">
-									<div class="tab_panel_title">Query Dasar</div>
+									<div class="tab_panel_title text-center"><b>SELECT</b></div>
 									<div class="tab_panel_content">
 										<div class="tab_panel_text">
-											<p>Lorem Ipsn gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosquad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Lorem Ipsn gravida nibh vel velit auctor aliquet. Class aptent taciti sociosquad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+											<p style="text-indent:50px;text-align: justify;">Select berfungsi untuk memspesifikasikan nama-nama kolom yang akan ditampilkan. Nama-nama kolom dituliskan setelah klausa ini. Cara penggunaan SELECT adalah sebagai berikut :</p>
+											<p class="text-center"><b>SELECT col1, col2, col3, … , coln FROM table_name;</b></p>
+											<p style="text-indent:50px;text-align: justify;">Jika ingin menggunakan SELECT dengan suatu kondisi bisa menggunakan query dengan format seperti dibawah ini:</p>
+											<p class="text-center"><b>SELECT col1, col2, col3, … , coln FROM table_name WHERE [condition];</b></p>
+											<p style="text-indent:50px;text-align: justify;">Query diatas berfungsi untuk melihat data yang ada di col1, col2, col3, hingga coln dari tabel yang bernama table_name. Jika ingin melihat semua data yang ada di semua kolom dari table_name bisa menggunakan query seperti dibawah ini:</p>
+											<p class="text-center"><b>SELECT  *  FROM table_name;</b></p>
 										</div>
 
 										<div class="tab_panel_faq">
@@ -179,7 +184,7 @@
 
 								<!-- Curriculum -->
 								<div class="tab_panel tab_panel_2">
-									<div class="tab_panel_content">
+									<div class="tab_panel_content" id="cekomentar">
 										<div class="tab_panel_title">SHIDQI AQIL</div>
 										<div class="tab_panel_content">
 											<div class="tab_panel_text">
@@ -187,8 +192,8 @@
 											</div>
 
 											<!-- Dropdowns -->
-											<
 										</div>
+										<hr>
 									</div>
 								</div>
 
@@ -305,11 +310,12 @@
 								<div class="feature_list">
 
 									<!-- Feature -->
-									<form class="counter_form_content d-flex flex-column align-items-center justify-content-center" action="#">
-
-										<input type="text" class="counter_input" placeholder="Your Name:" required="required">
-										<textarea class="counter_input counter_text_input" placeholder="Message:" required="required"></textarea>
-										<button type="submit" class="counter_form_button">Kirim</button>
+									<form method="POST" class="counter_form_content d-flex flex-column" action="">
+										<label for="nama"><b>Nama : </b></label>
+										<input type="text" name="nama" id="nama" class="counter_input align-items-center justify-content-center" placeholder="Your Name:" required="required">
+										<label for="komen"><b>Pesan : </b></label>
+										<textarea class="counter_input counter_text_input align-items-center justify-content-center" name="komen" id="komen" placeholder="Message:" required="required"></textarea>
+										<button type="submit" class="counter_form_button" id="kirim" name="kirim">Kirim</button>
 									</form>
 
 									<!-- Feature -->
@@ -348,11 +354,14 @@
 
 			</footer>
 
-
-
-
-
-<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>			
+<script>
+	// $(document).ready(function(){
+	// 	$('#kirim').click(function(){
+	// 		alert('Pesan Terkirim');
+	// 	});
+	// });
+</script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
 <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
