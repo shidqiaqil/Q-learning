@@ -479,12 +479,12 @@
 									<div class="feature_list">
 	
 										<!-- Feature -->
-										<form class="counter_form_content d-flex flex-column" action="#">
+										<form class="counter_form_content d-flex flex-column" method="post" action="komen.php">
 											<label for="nama"><b>Nama : </b></label>
-											<input type="text" class="counter_input  align-items-center justify-content-center" placeholder="Your Name:" required="required">
+											<input type="text" id="nama" name="nama" class="counter_input  align-items-center justify-content-center" placeholder="Your Name:" required="required">
 											<label for="komen"><b>Pesan : </b></label>
-											<textarea class="counter_input counter_text_input  align-items-center justify-content-center" placeholder="Message:" required="required"></textarea>
-											<button type="submit" class="counter_form_button mb-3">Kirim</button>
+											<textarea id="komen" name="komen" class="counter_input counter_text_input  align-items-center justify-content-center" placeholder="Message:" required="required"></textarea>
+											<button type="submit" name="kirimoperator" id="kirimoperator" class="counter_form_button mb-3">Kirim</button>
 										</form>
 	
 										<!-- Feature -->
