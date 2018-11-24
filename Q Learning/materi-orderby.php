@@ -65,7 +65,7 @@
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav">
 									<li class="nav-item margin1">
-										<a class="nav-link dropbtn font1" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+										<a class="nav-link dropbtn font1" href="index.php">Beranda <span class="sr-only">(current)</span></a>
 									</li>
 									<li class="nav-item active dropdown margin1">
 										<a class="nav-link dropbtn dropdown-toggle font1" style="color:#14bdee;" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -85,19 +85,19 @@
 													<li class="dropdown-divider"></li>
 													<li class="dropdown-item" style="padding:0%"><a href="materi-kondisional.php">Kondisional</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="materi-orderby.php">Order By</a></li>
+													<li class="dropdown-item" style="padding:0%"><a style="color:#14bdee;" href="materi-orderby.php">Order By</a></li>
 												</ul>
 											</li>
 											<li class="dropdown-submenu">
 												<a class="dropdown-item" href="#">Intermediate Query</a>
 												<ul class="dropdown-menu" role="menu">
-													<li class="dropdown-item" style="padding:0%"><a href="#">Pengenalan</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="Pengenalan-intermediete.php">Pengenalan</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="#">Inner Join</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="materi-innerjoin.php">Inner Join</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="#">Natural Join</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="materi-naturaljoin.php">Natural Join</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="#">Cross Join</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="materi-crossjoin.php">Cross Join</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -182,8 +182,7 @@
 
 						<!-- Course Image -->
 						<div class="course_image">
-							<iframe style="height:350px;width:100%;" src="https://www.youtube.com/embed/OlT3FispsMU" frameborder="0" allow="accelerometer;
-							autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="100%" height="350" src="https://www.youtube.com/embed/6YGvqrwQ9d4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 
 						<!-- Course Tabs -->
@@ -401,7 +400,7 @@
 
 			</footer>
 
-<script src="js/jquery-3.2.1.min.js"></script>			
+<script src="js/jquery-3.2.1.min.js"></script>
 <script>
 	// $(document).ready(function(){
 	// 	$('#kirim').click(function(){

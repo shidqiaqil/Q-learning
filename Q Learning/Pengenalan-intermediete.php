@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Unicat project">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -62,18 +62,18 @@
 							</ul>
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav">
-									<li class="nav-item active margin1">
-										<a class="nav-link dropbtn font1" style="color:#14bdee;" href="index.php">Beranda <span class="sr-only">(current)</span></a>
+									<li class="nav-item margin1">
+										<a class="nav-link dropbtn font1" href="index.php">Beranda <span class="sr-only">(current)</span></a>
 									</li>
-									<li class="nav-item dropdown margin1">
-										<a class="nav-link dropbtn dropdown-toggle font1" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<li class="nav-item active dropdown margin1">
+										<a class="nav-link dropbtn dropdown-toggle font1" style="color:#14bdee;" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Materi
 										</a>
 										<ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
 											<li class="dropdown-submenu">
 												<a class="dropdown-item" tabindex="-1" href="#">Basic Query</a>
 												<ul class="dropdown-menu" role="menu">
-													<li class="dropdown-item" style="padding:0%"><a href="pengenalan.php">Pengenalan</a></li>
+													<li class="dropdown-item" style="padding:0%"><a style="color:#14bdee;" href="pengenalan.php">Pengenalan</a></li>
 													<li class="dropdown-divider"></li>
 													<li class="dropdown-item" style="padding:0%"><a href="mater-query-dasar.php">Select</a></li>
 													<li class="dropdown-divider"></li>
@@ -106,7 +106,7 @@
 										</a>
 										<div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
 											<a class="dropdown-item" href="soal-query-dasar.html">Basic Query</a>
-											<a class="dropdown-item" href="#">Intermediate Query</a>
+											<a class="dropdown-item" href="Pengenalan-intermediete.php">Intermediate Query</a>
 										</div>
 									</li>
 								</ul>
@@ -128,15 +128,16 @@
 							</div>
 							<nav class="main_nav_container ml-auto navbar-fixed-top">
 								<ul class="main_nav">
-									<li><a href="index.html" style="color:#14bdee;">Beranda</a></li>
+									<li><a href="index.html">Beranda</a></li>
 									<div class="dropdown">
 									  <li>
-											<a href="#" class="dropbtn ">Materi <i class="fa fa-caret-down"></i></a>
+											<a href="#" class="dropbtn "style="color:#14bdee;">Materi <i class="fa fa-caret-down"></i></a>
 										</li>
 									  <div class="dropdown-content">
-									    <a href="pengenalan.html">Pengenalan</a>
+									    <a href="pengenalan.html"style="color:#14bdee;">Pengenalan</a>
 									    <a href="mater-query-dasar.html">Query Dasar</a>
 									    <a href="materi-intermediette-query.html">Intermediete Query</a>
+
 									  </div>
 									</div>
 									<div class="dropdown">
@@ -144,8 +145,9 @@
 											<a href="#" class="dropbtn">Soal <i class="fa fa-caret-down"></i></a>
 										</li>
 										<div class="dropdown-content">
-											<a href="soal-query-dasar.html">Query Dasar</a>
-											<a href="soal-intermediette-query.html">Intermediette Query</a>
+                      <a href="soal-query-dasar.html">Query Dasar</a>
+                      <a href="soal-intermediette-query.html">Intermediette Query</a>
+
 										</div>
 								</ul>
 							</nav>
@@ -187,32 +189,8 @@
 
 	<!-- Home -->
 
-	<div class="home">
-		<div class="home_slider_container">
-
-			<!-- Home Slider -->
-			<div class="owl-carousel owl-theme home_slider">
-
-				<!-- Home Slider Item -->
+			<!-- Home Slider Item -->
 				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(images/blurred-background-close-up-coffee-cup-908284.jpg)"></div>
-					<div class="home_slider_content">
-						<div class="container">
-							<div class="row">
-								<div class="col text-center">
-									<div class="home_slider_title"></div>
-									<div class="home_slider_subtitle"></div>
-									<div class="home_slider_form_container">
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Home Slider Item -->
-				<!-- <div class="owl-item">
 					<div class="home_background" style="background-image:url(images/home_slider_1.jpg)"></div>
 					<div class="home_slider_content">
 						<div class="container">
@@ -242,10 +220,10 @@
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 
 				<!-- Home Slider Item -->
-				<!-- <div class="owl-item">
+				<div class="owl-item">
 					<div class="home_background" style="background-image:url(images/home_slider_1.jpg)"></div>
 					<div class="home_slider_content">
 						<div class="container">
@@ -275,7 +253,7 @@
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 
 			</div>
 		</div>
@@ -287,47 +265,31 @@
 
 	<!-- Features -->
 
-	<div class="features">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="section_title_container text-center">
-						<h2 class="section_title">Welcome To Q-Learning</h2>
-						<div class="section_subtitle"><p>Q-LEARNING adalah sebuah website yang berfokus pada pembelajaran basic query dan intermediette query</p></div>
-					</div>
-				</div>
-			</div>
-			<div class="row features_row">
+  Copy the entire text BELOW THIS STATEMENT. Then replace the text in pink with your own text, while leaving the blue text intact. Save the document as "documentname.html" (e.g., quiz1.html), and you are ready to post it on your server!
+<html>
+<head>
+<title>multiple-choice quiz form</title>
+</head>
+<body bgcolor=#ffffff>
 
-				<!-- Features Item -->
-				<div class="col-md-4">
-						<div class="text-center trans_400">
-			      	<img src="images/video-camera (1).png">
-			      	<h4 class="font-weight-bold my-4">Materi</h4>
-			      	<p class="grey-text mb-md-0 mb-5">Untuk memudahkan kamu untuk belajar, kami menyiapkan berbagai macam video yang dapat dengan mudah kamu mengerti
-			      	</p>
-						</div>
-    		</div>
+<h3></h3>
+<div class="container">
+	<div></div>
+	<h2 style="margin-top:10%;"> Pendahuluan</h2>
+	<h2>
 
-				<!-- Features Item -->
-				<div class="col-md-4">
-						<div class="text-center trans_400">
-							<img src="images/icon_2.png">
-							<h4 class="font-weight-bold my-4">Soal</h4>
-							<p class="grey-text mb-md-0 mb-5">Terdapat berbagai macam soal untuk menguji pemahaman tentang query.
-							</p>
-						</div>
-				</div>
-
-				<!-- Features Item -->
-				<div class="col-md-4">
-						<div class="text-center trans_400">
-							<img src="images/class (1).png" style="width:70px;length:55px;">
-							<h4 class="font-weight-bold my-4">Pembahasan</h4>
-							<p class="grey-text mb-md-0 mb-5">kami juga menyediakan berbagai macam pembahasan soal untuk membantu dalam memecahkan persoalan.
-							</p>
-						</div>
-				</div>
+	</h2>
+	<p style="margin-bottom:1%; margin-top:2%;" style="margin-top:1%;text-align: justify;">SQL juga menyediakan operasi yang digunakan untuk memperoleh hasil data query yang diddapat dari dua tabel atau lebih. operasi tersebut dikenal dengan istilah join. penggabungan tabel tersebut harus melibatkan suatu kondisi yang dapat membentuk hubungan
+		antara satu tabel dengan yang lainnya. kondisi penggabungan tersebut dikenal dengan istilah join condition.
+	JOIN dalam mysql adalah Salah satu fitur SQL yang paling berguna untuk menggabungkan table dengan query – query yang mendapatkan kembali data. Join adalah salah satu dari beberapa operasi paling penting yang dapat anda lakukan dengan menggunakan statement SELECT .
+ 	terdapat 3 model join yang biasa digunakan dalam query, yaitu Cross join, natural join, dan outer join. </p>
+	<br>
+	<br>
+	<br>
+	<br>
+</div>
+</body>
+</html>
 
 
 				<!-- Features Item -->
@@ -339,12 +301,12 @@
 
 	<!-- Popular Courses -->
 
-	<footer class="footer">
-					<div class="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start">
-						<div class="cr_text offset-md-5"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	<footer class="footer" style="margin-top:138px;">
+		<div class="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start">
+			<div class="cr_text offset-md-5"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
-					</div>
+		</div>
 
 	</footer>
 
