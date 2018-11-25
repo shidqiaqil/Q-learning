@@ -77,7 +77,7 @@
 												<ul class="dropdown-menu" role="menu">
 													<li class="dropdown-item" style="padding:0%"><a href="pengenalan.php">Pengenalan</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="mater-query-dasar.php">Select</a></li>
+													<li class="dropdown-item" style="padding:0%"><a  href="mater-query-dasar.php">Select</a></li>
 													<li class="dropdown-divider"></li>
 													<li class="dropdown-item" style="padding:0%"><a href="materi-operator.php">Operator</a></li>
 													<li class="dropdown-divider"></li>
@@ -85,7 +85,7 @@
 													<li class="dropdown-divider"></li>
 													<li class="dropdown-item" style="padding:0%"><a href="materi-kondisional.php">Kondisional</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a style="color:#14bdee;" href="materi-orderby.php">Order By</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="materi-orderby.php">Order By</a></li>
 												</ul>
 											</li>
 											<li class="dropdown-submenu">
@@ -95,7 +95,7 @@
 													<li class="dropdown-divider"></li>
 													<li class="dropdown-item" style="padding:0%"><a href="materi-innerjoin.php">Inner Join</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="materi-naturaljoin.php">Natural Join</a></li>
+													<li class="dropdown-item" style="padding:0%"><a style="color:#14bdee;" href="materi-naturaljoin.php">Natural Join</a></li>
 													<li class="dropdown-divider"></li>
 													<li class="dropdown-item" style="padding:0%"><a href="materi-crossjoin.php">Cross Join</a></li>
 												</ul>
@@ -163,45 +163,71 @@
 							<!-- Course Info Item -->
 							<div class="course_info_item">
 								<div class="course_info_title">Durasi :</div>
-								<div class="course_info_text"><a href="#">06:54</a></div>
+								<div class="course_info_text"><a href="#">05:00</a></div>
 							</div>
 
 							<!-- Course Info Item -->
 							<div class="course_info_item">
 								<div class="course_info_title">Materi :</div>
-								<div class="course_info_text"><a href="#">Order By</a></div>
+								<div class="course_info_text"><a href="#">Natural Join</a></div>
 							</div>
 
 							<!-- Course Info Item -->
 							<div class="course_info_item">
 								<div class="course_info_title">Kategori :</div>
-								<div class="course_info_text"><a href="#">Query Dasar</a></div>
+								<div class="course_info_text"><a href="#">Intermediette Query</a></div>
 							</div>
 
 						</div>
 
 						<!-- Course Image -->
 						<div class="course_image">
-							<iframe width="100%" height="350" src="https://www.youtube.com/embed/6YGvqrwQ9d4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="100%" height="350px" src="https://www.youtube.com/embed/nqkbjWKV1yY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 
 						<!-- Course Tabs -->
 						<div class="course_tabs_container">
 							<div class="tabs d-flex flex-row align-items-center justify-content-start">
-								<div class="tab active">description</div>
+								<div class="tab active">deskripsi</div>
 								<div class="tab ">Diskusi</div>
 							</div>
 							<div class="tab_panels">
 
 								<!-- Description -->
 								<div class="tab_panel active">
-									<div class="tab_panel_title text-center"><b>ORDER BY</b></div>
+									<div class="tab_panel_title text-center"><b>NATURAL JOIN</b></div>
 									<div class="tab_panel_content">
 										<div class="tab_panel_text">
-											<p style="text-indent:50px;text-align: justify;">Order By merupakan statement yang digunakan untuk mengurutkan hasil query berdasarkan kolom tertentu. Bentuk umum klusa ORDER BY adalah sebagai berikut :</p>
-											<p class="text-center"><b>SELECT * col1, col2 FROM table_name ORDER BY col1 [ASC|DESC]</b></p>
-											<p style="text-indent:50px;text-align: justify;">Contoh penggunaan klausa ORDER BY untuk menampilkan nama, umur, dan gaji dengan kondisi umur ditambah 10 lebih besar dari 30 dan urut secara ascending berdasarkan nama adalah sebagai berikut :</p>
-											<p class="text-center"><b>SELECT nama, umur, gaji FROM pengguna WHERE umur + 10 > 30 ORDER BY nama ASC;</b></p>
+											<p style="text-indent:50px;text-align: justify;">Natural Join akan mengambil baris dari tabel-tabel yang mempunyai kesamaan pada semua nama kolom. jika ada sebuah kolom yang mempunyai nama yang sama\
+                      akan tetapi tipe datanya berbeda, maka akan mengembalikan eror message</p>
+                      <p style="text-indent:50px;text-align: justify;">Asumsi tabel member dan transaksi mempunyai satu kolom yang sama, yaitu kolom idmembber </p>
+                      <p class="text-center"><b>SELECT idmember, nmMember, tgltransaksi from member natural join transaksi</b></p>
+                      <p style="text-indent:50px;text-align: justify;">Hasil dari query diatas akan seperti ini</p>
+                      <table class="table table-bordered text-dark">
+                          <tr>
+                            <th>idmember</th>
+                            <th>nmmember</th>
+                            <th>tgltransaksi</th>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>deni</td>
+                            <td>3 april 2018</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>jojo</td>
+                            <td>1 april 2012</td>
+                          </tr>
+                    </table>
+
+                        </table>
+                        <div> </div>
+
+                        <p class="text-center" style="margin-top: 2%;"><b>SELECT * FROM kota INNER JOIN propinsi ON kota.id_provinsi = provinsi_id;</b></p>
+
+											<p style="text-indent:50px;text-align: justify;">Perintah ON kota.id_propinsi = propinsi.id, berarti akan menampilkan data-data yang mempunyai nilai sama antara id_propinsi pada table kota dan id pada table propinsi. Yang artinya data tersebut berelasi.</p>
+
 										</div>
 
 										<div class="tab_panel_faq">
@@ -230,15 +256,26 @@
 								<!-- Curriculum -->
 								<div class="tab_panel tab_panel_2">
 									<div class="tab_panel_content" id="cekomentar">
-										<div class="tab_panel_title">SHIDQI AQIL</div>
-										<div class="tab_panel_content">
-											<div class="tab_panel_text">
-												<p>iodwughiogdwuoiwqugdgwu</p>
-											</div>
+										<?php
+											include 'koneksi.php';
+											$sql = "SELECT nama, komen FROM komentar WHERE idmateri = 1";
+											$query = mysqli_query($conn,$sql);
+											$row = mysqli_num_rows($query);
+											if ($row>0){
+												while ($row = mysqli_fetch_array($query)){ ?>
+													<div class="tab_panel_title"><?php echo $row['nama']; ?></div>
+													<div class="tab_panel_content">
+														<div class="tab_panel_text">
+															<p><?php echo $row['komen']; ?></p>
+														</div>
 
-											<!-- Dropdowns -->
-										</div>
-										<hr>
+														<!-- Dropdowns -->
+													</div>
+													<hr>
+										<?php
+												}
+											}
+										?>
 									</div>
 								</div>
 
@@ -356,12 +393,12 @@
 									<div class="feature_list">
 
 										<!-- Feature -->
-										<form method="POST" class="counter_form_content d-flex flex-column" action="">
+										<form method="POST" class="counter_form_content d-flex flex-column" action="komen.php">
 											<label for="nama"><b>Nama : </b></label>
 											<input type="text" name="nama" id="nama" class="counter_input align-items-center justify-content-center" placeholder="Your Name:" required="required">
 											<label for="komen"><b>Pesan : </b></label>
 											<textarea class="counter_input counter_text_input align-items-center justify-content-center" name="komen" id="komen" placeholder="Message:" required="required"></textarea>
-											<button type="submit" class="counter_form_button mb-3" id="kirim" name="kirim">Kirim</button>
+											<button type="submit" class="counter_form_button mb-3" id="kirimselect" name="kirimselect">Kirim</button>
 										</form>
 
 										<!-- Feature -->

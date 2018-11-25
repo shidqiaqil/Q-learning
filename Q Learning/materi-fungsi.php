@@ -66,7 +66,7 @@
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav">
 									<li class="nav-item margin1">
-										<a class="nav-link dropbtn font1" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+										<a class="nav-link dropbtn font1" href="index.php">Beranda <span class="sr-only">(current)</span></a>
 									</li>
 									<li class="nav-item active dropdown margin1">
 										<a class="nav-link dropbtn dropdown-toggle font1" style="color:#14bdee;" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -92,13 +92,13 @@
 											<li class="dropdown-submenu">
 												<a class="dropdown-item" href="#">Intermediate Query</a>
 												<ul class="dropdown-menu" role="menu">
-													<li class="dropdown-item" style="padding:0%"><a href="#">Pengenalan</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="pengenalan.php">Pengenalan</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="#">Inner Join</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="materi-innerjoin.php">Inner Join</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="#">Natural Join</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="materi-naturaljoin.php">Natural Join</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="#">Cross Join</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="materi-crossjoin.php">Cross Join</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -109,7 +109,7 @@
 										</a>
 										<div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
 											<a class="dropdown-item" href="soal-query-dasar.html">Basic Query</a>
-											<a class="dropdown-item" href="#">Intermediate Query</a>
+											<a class="dropdown-item" href="Pengenalan-intermediete.php">Intermediate Query</a>
 										</div>
 									</li>
 								</ul>
@@ -207,7 +207,7 @@
 							<!-- Course Info Item -->
 							<div class="course_info_item">
 								<div class="course_info_title">Durasi :</div>
-								<div class="course_info_text"><a href="#">06:54</a></div>
+								<div class="course_info_text"><a href="#">12:30</a></div>
 							</div>
 
 							<!-- Course Info Item -->
@@ -226,9 +226,7 @@
 
 						<!-- Course Image -->
 						<div class="course_image">
-							<iframe style="height:350px;width:100%;" src="https://www.youtube.com/embed/JA_92A65pTg"
-							frameborder="0" allow="accelerometer; autoplay;
-							encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="100%" height="350px" src="https://www.youtube.com/embed/HWqJSKmRYRA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 
 						<!-- Course Tabs -->
@@ -472,11 +470,11 @@
 							<div class="container">
 								<div class="sidebar_section_title mt-3">Diskusi</div>
 								<div class="sidebar_feature">
-	
-	
+
+
 									<!-- Features -->
 									<div class="feature_list">
-	
+
 										<!-- Feature -->
 										<form class="counter_form_content d-flex flex-column" method="post" action="komen.php">
 											<label for="nama"><b>Nama : </b></label>
@@ -485,9 +483,9 @@
 											<textarea id="komen" name="komen" class="counter_input counter_text_input  align-items-center justify-content-center" placeholder="Message:" required="required"></textarea>
 											<button id="kirimfungsi" name="kirimfungsi" type="submit" class="counter_form_button mb-3">Kirim</button>
 										</form>
-	
+
 										<!-- Feature -->
-	
+
 									</div>
 								</div>
 							</div>
