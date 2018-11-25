@@ -253,7 +253,7 @@
 										}else{ ?>
 											<div class="tab_panel_content">
 												<div class="tab_panel_text">
-													<p class="text-center">Belum Ada Komentar</p>
+													<p class="text-center">Belum Ada Diskusi</p>
 												</div>
 
 													<!-- Dropdowns -->

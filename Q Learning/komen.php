@@ -5,6 +5,16 @@
         komenOperator();
     }else if(isset($_POST['kirimfungsi'])){
         komenFungsi();
+    }else if(isset($_POST['kirimkondisional'])){
+        komenKondisional();
+    }else if(isset($_POST['kirimorderby'])){
+        komenOrderBy();
+    }else if(isset($_POST['kirimcross'])){
+        komenCrossJoin();
+    }else if(isset($_POST['kirimnatural'])){
+        komenNaturalJoin();
+    }else if(isset($_POST['kiriminner'])){
+        komenInnerJoin();
     }
 
 
@@ -60,6 +70,86 @@
                 echo "<script type='text/javascript'>";
                 echo "alert('Pesan Terkirim');";
                 echo "document.location = 'materi-fungsi.php'";
+                echo "</script>";
+            }
+        }
+    }
+
+    function komenKondisional(){
+        include 'koneksi.php';
+        $nama = getFieldNama();
+        $komen = getFieldKomen();
+        if(!empty($nama)&&!empty($komen)){
+            $sql = "INSERT INTO komentar (idmateri,nama,komen) VALUES (4,'".$nama."','".$komen."')";
+            $sql1 = mysqli_query($conn,$sql);
+            if($sql1){
+                echo "<script type='text/javascript'>";
+                echo "alert('Pesan Terkirim');";
+                echo "document.location = 'materi-kondisional.php'";
+                echo "</script>";
+            }
+        }
+    }
+
+    function komenOrderBy(){
+        include 'koneksi.php';
+        $nama = getFieldNama();
+        $komen = getFieldKomen();
+        if(!empty($nama)&&!empty($komen)){
+            $sql = "INSERT INTO komentar (idmateri,nama,komen) VALUES (5,'".$nama."','".$komen."')";
+            $sql1 = mysqli_query($conn,$sql);
+            if($sql1){
+                echo "<script type='text/javascript'>";
+                echo "alert('Pesan Terkirim');";
+                echo "document.location = 'materi-orderby.php'";
+                echo "</script>";
+            }
+        }
+    }
+
+    function komenCrossJoin(){
+        include 'koneksi.php';
+        $nama = getFieldNama();
+        $komen = getFieldKomen();
+        if(!empty($nama)&&!empty($komen)){
+            $sql = "INSERT INTO komentar (idmateri,nama,komen) VALUES (6,'".$nama."','".$komen."')";
+            $sql1 = mysqli_query($conn,$sql);
+            if($sql1){
+                echo "<script type='text/javascript'>";
+                echo "alert('Pesan Terkirim');";
+                echo "document.location = 'materi-crossjoin.php'";
+                echo "</script>";
+            }
+        }
+    }
+
+    function komenNaturalJoin(){
+        include 'koneksi.php';
+        $nama = getFieldNama();
+        $komen = getFieldKomen();
+        if(!empty($nama)&&!empty($komen)){
+            $sql = "INSERT INTO komentar (idmateri,nama,komen) VALUES (7,'".$nama."','".$komen."')";
+            $sql1 = mysqli_query($conn,$sql);
+            if($sql1){
+                echo "<script type='text/javascript'>";
+                echo "alert('Pesan Terkirim');";
+                echo "document.location = 'materi-naturaljoin.php'";
+                echo "</script>";
+            }
+        }
+    }
+
+    function komenInnerJoin(){
+        include 'koneksi.php';
+        $nama = getFieldNama();
+        $komen = getFieldKomen();
+        if(!empty($nama)&&!empty($komen)){
+            $sql = "INSERT INTO komentar (idmateri,nama,komen) VALUES (8,'".$nama."','".$komen."')";
+            $sql1 = mysqli_query($conn,$sql);
+            if($sql1){
+                echo "<script type='text/javascript'>";
+                echo "alert('Pesan Terkirim');";
+                echo "document.location = 'materi-innerjoin.php'";
                 echo "</script>";
             }
         }

@@ -169,7 +169,7 @@
 							<!-- Course Info Item -->
 							<div class="course_info_item">
 								<div class="course_info_title">Materi :</div>
-								<div class="course_info_text"><a href="#">Select</a></div>
+								<div class="course_info_text"><a href="#">Operator</a></div>
 							</div>
 
 							<!-- Course Info Item -->
@@ -182,12 +182,7 @@
 
 						<!-- Course Image -->
 						<div class="course_image">
-<<<<<<< HEAD
-							<iframe style="height:350px;width:100%;" src="https://www.youtube.com/embed/OlT3FispsMU" frameborder="0" allow="accelerometer;
-							autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-=======
 							<iframe width="100%" height="350px" src="https://www.youtube.com/embed/p-bdPrkSVJ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
->>>>>>> 791c407fd6c0c6c5e41cf87e32fe7b8331fe796a
 						</div>
 
 						<!-- Course Tabs -->
@@ -200,15 +195,84 @@
 
 								<!-- Description -->
 								<div class="tab_panel active">
-									<div class="tab_panel_title text-center"><b>SELECT</b></div>
+									<div class="tab_panel_title text-center"><b>OPERATOR</b></div>
 									<div class="tab_panel_content">
 										<div class="tab_panel_text">
-											<p style="text-indent:50px;text-align: justify;">Select berfungsi untuk memspesifikasikan nama-nama kolom yang akan ditampilkan. Nama-nama kolom dituliskan setelah klausa ini. Cara penggunaan SELECT adalah sebagai berikut :</p>
-											<p class="text-center"><b>SELECT col1, col2, col3, … , coln FROM table_name;</b></p>
-											<p style="text-indent:50px;text-align: justify;">Jika ingin menggunakan SELECT dengan suatu kondisi bisa menggunakan query dengan format seperti dibawah ini:</p>
-											<p class="text-center"><b>SELECT col1, col2, col3, … , coln FROM table_name WHERE [condition];</b></p>
-											<p style="text-indent:50px;text-align: justify;">Query diatas berfungsi untuk melihat data yang ada di col1, col2, col3, hingga coln dari tabel yang bernama table_name. Jika ingin melihat semua data yang ada di semua kolom dari table_name bisa menggunakan query seperti dibawah ini:</p>
-											<p class="text-center"><b>SELECT  *  FROM table_name;</b></p>
+											<p style="text-indent:50px;text-align: justify;">Operator merupakan kata atau simbol yang sudah ditetapkan untuk melakukan suatu proses operasi di kode query. Operator dibagi menjadi 2 yaitu : (Asumsikan A = 10 dan B = 20)</p>
+											<p><b>1. Operator Aritmatika</b></p>
+											<table class="table text-dark table-bordered table-striped">
+												<th>Operator</th>
+												<th>Deskripsi</th>
+												<th>Contoh</th>
+												<tr>
+													<td>+</td>
+													<td>Penjumlahan</td>
+													<td>A + B jadi 30</td>
+												</tr>
+												<tr>
+													<td>-</td>
+													<td>Pengurangan</td>
+													<td>A - B jadi -10</td>
+												</tr>
+												<tr>
+													<td>*</td>
+													<td>Pengalian</td>
+													<td>A * B jadi 200</td>
+												</tr>
+												<tr>
+													<td>/</td>
+													<td>Pembagian</td>
+													<td>B / A jadi 2</td>
+												</tr>
+												<tr>
+													<td>%</td>
+													<td>Modulus</td>
+													<td>A % B jadi 10</td>
+												</tr>
+											</table>
+											<p><b>2. Operator Komparasi</b></p>
+											<table class="table text-dark table-bordered table-striped">
+												<th>Operator</th>
+												<th>Deskripsi</th>
+												<th>Contoh</th>
+												<tr>
+													<td>=</td>
+													<td>Sama dengan</td>
+													<td>A = B maka FALSE</td>
+												</tr>
+												<tr>
+													<td>!=</td>
+													<td>Tidak sama dengan</td>
+													<td>A != B maka TRUE</td>
+												</tr>
+												<tr>
+													<td><></td>
+													<td>Tidak sama dengan</td>
+													<td>A <> B maka TRUE</td>
+												</tr>
+												<tr>
+													<td>></td>
+													<td>Lebih besar daripada</td>
+													<td>A > B maka FALSE</td>
+												</tr>
+												<tr>
+													<td><</td>
+													<td>Lebih kecil daripada</td>
+													<td>A < B maka TRUE</td>
+												</tr>
+												<tr>
+													<td>>=</td>
+													<td>Lebih besar sama dengan daripada</td>
+													<td>A >= B maka FALSE</td>
+												</tr>
+												<tr>
+													<td><=</td>
+													<td>Lebih kecil sama dengan daripada</td>
+													<td>A <= B maka TRUE</td>
+												</tr>
+											</table>
+											<p style="text-align: justify;">Contoh : ada satu tabel bernama pengguna dengan atribut nama, umur, gaji. Jika ingin melihat pengguna yang jika umurnya ditambah 10 akan lebih dari 30, maka query nya akan menjadi seperti dibawah ini :</p>
+											<p class="text-center"><b>SELECT nama, umur, gaji FROM pengguna WHERE umur + 10 > 30;</b></p>
 										</div>
 
 										<div class="tab_panel_faq">
@@ -258,7 +322,7 @@
 										}else{ ?>
 											<div class="tab_panel_content">
 												<div class="tab_panel_text">
-													<p class="text-center">Belum Ada Komentar</p>
+													<p class="text-center">Belum Ada Diskusi</p>
 												</div>
 
 													<!-- Dropdowns -->

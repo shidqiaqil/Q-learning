@@ -256,26 +256,35 @@
 								<!-- Curriculum -->
 								<div class="tab_panel tab_panel_2">
 									<div class="tab_panel_content" id="cekomentar">
-										<?php
-											include 'koneksi.php';
-											$sql = "SELECT nama, komen FROM komentar WHERE idmateri = 1";
-											$query = mysqli_query($conn,$sql);
-											$row = mysqli_num_rows($query);
-											if ($row>0){
-												while ($row = mysqli_fetch_array($query)){ ?>
-													<div class="tab_panel_title"><?php echo $row['nama']; ?></div>
-													<div class="tab_panel_content">
-														<div class="tab_panel_text">
-															<p><?php echo $row['komen']; ?></p>
-														</div>
-
-														<!-- Dropdowns -->
+									<?php 
+										include 'koneksi.php';
+										$sql = "SELECT nama, komen FROM komentar WHERE idmateri = 7";
+										$query = mysqli_query($conn,$sql);
+										$row = mysqli_num_rows($query);
+										if ($row>0){
+											while ($row = mysqli_fetch_array($query)){ ?>
+												<div class="tab_panel_title"><?php echo $row['nama']; ?></div>
+												<div class="tab_panel_content">
+													<div class="tab_panel_text">
+														<p><?php echo $row['komen']; ?></p>
 													</div>
-													<hr>
+
+													<!-- Dropdowns -->
+												</div>
+												<hr>
 										<?php
-												}
 											}
-										?>
+										}else{ ?>
+											<div class="tab_panel_content">
+												<div class="tab_panel_text">
+													<p class="text-center">Belum Ada Diskusi</p>
+												</div>
+
+													<!-- Dropdowns -->
+											</div>
+									<?php
+										}
+									?>
 									</div>
 								</div>
 
@@ -398,7 +407,7 @@
 											<input type="text" name="nama" id="nama" class="counter_input align-items-center justify-content-center" placeholder="Your Name:" required="required">
 											<label for="komen"><b>Pesan : </b></label>
 											<textarea class="counter_input counter_text_input align-items-center justify-content-center" name="komen" id="komen" placeholder="Message:" required="required"></textarea>
-											<button type="submit" class="counter_form_button mb-3" id="kirimselect" name="kirimselect">Kirim</button>
+											<button type="submit" class="counter_form_button mb-3" id="kirimnatural" name="kirimnatural">Kirim</button>
 										</form>
 
 										<!-- Feature -->

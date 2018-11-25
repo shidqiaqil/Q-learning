@@ -82,7 +82,7 @@
 													<li class="dropdown-divider"></li>
 													<li class="dropdown-item" style="padding:0%"><a href="materi-operator.php">Operator</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="materi-fungsi.php">Fungsi</a></li>
+													<li class="dropdown-item" style="padding:0%"><a style="color:#14bdee;" href="materi-fungsi.php">Fungsi</a></li>
 													<li class="dropdown-divider"></li>
 													<li class="dropdown-item" style="padding:0%"><a href="materi-kondisional.php">Kondisional</a></li>
 													<li class="dropdown-divider"></li>
@@ -351,7 +351,7 @@
 											}else{ ?>
 												<div class="tab_panel_content">
 													<div class="tab_panel_text">
-														<p class="text-center">Belum Ada Komentar</p>
+														<p class="text-center">Belum Ada Diskusi</p>
 													</div>
 
 													<!-- Dropdowns -->

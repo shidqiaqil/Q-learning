@@ -207,13 +207,13 @@
 							<!-- Course Info Item -->
 							<div class="course_info_item">
 								<div class="course_info_title">Durasi :</div>
-								<div class="course_info_text"><a href="#">02:35</a></div>
+								<div class="course_info_text"><a href="#">02:36</a></div>
 							</div>
 
 							<!-- Course Info Item -->
 							<div class="course_info_item">
 								<div class="course_info_title">Materi :</div>
-								<div class="course_info_text"><a href="#">Operator</a></div>
+								<div class="course_info_text"><a href="#">Kondisional</a></div>
 							</div>
 
 							<!-- Course Info Item -->
@@ -239,7 +239,7 @@
 
 								<!-- Description -->
 								<div class="tab_panel active">
-									<div class="tab_panel_title text-center">OPERATOR</div>
+									<div class="tab_panel_title text-center">KLAUSA KONDISIONAL</div>
 									<div class="tab_panel_content">
 										<div class="tab_panel_text">
 											<p style="text-indent:50px;text-align: justify;">Terdapat dua metodde yang digunakan untuk menyatakan ekspresi kondisional, yaitu Case Expression dan Decode function. fungsi dari case expression sendiri adalah untuk memfasilitasi kebutuhan
@@ -369,14 +369,35 @@
 								<!-- Curriculum -->
 								<div class="tab_panel tab_panel_2">
 									<div class="tab_panel_content">
-										<div class="tab_panel_title">SHIDQI AQIL</div>
-										<div class="tab_panel_content">
-											<div class="tab_panel_text">
-												<p>iodwughiogdwuoiwqugdgwu</p>
-											</div>
+									<?php 
+										include 'koneksi.php';
+										$sql = "SELECT nama, komen FROM komentar WHERE idmateri = 4";
+										$query = mysqli_query($conn,$sql);
+										$row = mysqli_num_rows($query);
+										if ($row>0){
+											while ($row = mysqli_fetch_array($query)){ ?>
+												<div class="tab_panel_title"><?php echo $row['nama']; ?></div>
+												<div class="tab_panel_content">
+													<div class="tab_panel_text">
+														<p><?php echo $row['komen']; ?></p>
+													</div>
 
-											<!-- Dropdowns -->
-										</div>
+													<!-- Dropdowns -->
+												</div>
+												<hr>
+										<?php
+											}
+										}else{ ?>
+											<div class="tab_panel_content">
+												<div class="tab_panel_text">
+													<p class="text-center">Belum Ada Diskusi</p>
+												</div>
+
+													<!-- Dropdowns -->
+											</div>
+									<?php
+										}
+									?>
 									</div>
 								</div>
 
@@ -494,12 +515,12 @@
 									<div class="feature_list">
 
 										<!-- Feature -->
-										<form class="counter_form_content d-flex flex-column" method="post" action="komen.php">
+										<form method="POST" class="counter_form_content d-flex flex-column" action="komen.php">
 											<label for="nama"><b>Nama : </b></label>
 											<input type="text" id="nama" name="nama" class="counter_input  align-items-center justify-content-center" placeholder="Your Name:" required="required">
 											<label for="komen"><b>Pesan : </b></label>
 											<textarea id="komen" name="komen" class="counter_input counter_text_input  align-items-center justify-content-center" placeholder="Message:" required="required"></textarea>
-											<button type="submit" name="kirimoperator" id="kirimoperator" class="counter_form_button mb-3">Kirim</button>
+											<button type="submit" name="kirimkondisional" id="kirimkondisional" class="counter_form_button mb-3">Kirim</button>
 										</form>
 
 										<!-- Feature -->
