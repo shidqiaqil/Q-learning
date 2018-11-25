@@ -16,8 +16,6 @@
 <link rel="stylesheet" type="text/css" href="styles/course_responsive.css">
 <link rel="stylesheet" type="text/css" href="styles/dropdown.css">
 <link rel="stylesheet" type="text/css" href="styles/about.css">
-
-</head>
 <style>
 	.margin1{
 		margin-left: 20px;
@@ -34,6 +32,7 @@
 		overflow-y: auto;
 	}
 </style>
+</head>
 <body>
 
 <div class="super_container">
@@ -73,9 +72,6 @@
 											Materi
 										</a>
 										<ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-											<li class="dropdown-submenu">
-												<a class="dropdown-item" tabindex="-1" href="#">Basic Query</a>
-												<ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
 											<li class="dropdown-submenu">
 												<a class="dropdown-item" tabindex="-1" href="#">Basic Query</a>
 												<ul class="dropdown-menu" role="menu">
@@ -122,49 +118,6 @@
 				</div>
 			</div>
 		</nav>
-		<!-- <div class="header_container">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="header_content d-flex flex-row align-items-center justify-content-start">
-							<div class="logo_container">
-								<a href="#">
-									<div class="logo_text">Q-LEAR<span>NING</span></div>
-								</a>
-							</div>
-							<nav class="main_nav_container ml-auto navbar-fixed-top">
-								<ul class="main_nav">
-									<li><a href="#">Beranda</a></li>
-									<div class="dropdown">
-									  <li>
-											<a href="#" class="dropbtn " style="color: #14bdee; ">Materi <i class="fa fa-caret-down"></i></a>
-										</li>
-									  <div class="dropdown-content">
-									    <a href="#">Pengenalan</a>
-									    <a href="#">Query Dasar</a>
-									    <a href="#" style="color: #14bdee;">Operator</a>
-											<a href="#">Fungsi</a>
-											<a href="#">Kondisional</a>
-											<a href="#">Order by</a>
-									  </div>
-									</div>
-									<div class="dropdown">
-										<li>
-											<a href="#" class="dropbtn">Soal <i class="fa fa-caret-down"></i></a>
-										</li>
-										<div class="dropdown-content">
-											<a href="#">Link 1</a>
-											<a href="#">Link 2</a>
-											<a href="#">Link 3</a>
-										</div>
-								</ul>
-							</nav>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
 
 		<!-- Header Search Panel -->
 		<div class="header_search_container">
@@ -204,7 +157,7 @@
 				<div class="col-lg-8">
 
 					<div class="course_container" style="margin-top:6%;">
-						<!-- <div class="course_title">Operator</div> -->
+						<!-- <div class="course_title">Query Dasar</div> -->
 						<div style="margin-top:3%;" class="course_info d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
 
 							<!-- Course Info Item -->
@@ -216,7 +169,7 @@
 							<!-- Course Info Item -->
 							<div class="course_info_item">
 								<div class="course_info_title">Materi :</div>
-								<div class="course_info_text"><a href="#">Operator</a></div>
+								<div class="course_info_text"><a href="#">Select</a></div>
 							</div>
 
 							<!-- Course Info Item -->
@@ -229,9 +182,8 @@
 
 						<!-- Course Image -->
 						<div class="course_image">
-							<iframe style="height:350px;width:100%;" src="https://www.youtube.com/embed/JA_92A65pTg"
-							frameborder="0" allow="accelerometer; autoplay;
-							encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe style="height:350px;width:100%;" src="https://www.youtube.com/embed/OlT3FispsMU" frameborder="0" allow="accelerometer;
+							autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 
 						<!-- Course Tabs -->
@@ -244,88 +196,15 @@
 
 								<!-- Description -->
 								<div class="tab_panel active">
-									<div class="tab_panel_title text-center">OPERATOR</div>
+									<div class="tab_panel_title text-center"><b>SELECT</b></div>
 									<div class="tab_panel_content">
 										<div class="tab_panel_text">
-												<p style="text-indent:50px;text-align: justify;">Operator merupakan kata atau simbol yang sudah ditetapkan untuk melakukan suatu proses operasi di kode query. Operator dibagi menjadi 2 yaitu : <mark>(Asumsi A = 10 dan B = 20)</mark></p>
-												<p><b>1. Operator Aritmatika</b></p>
-												<table class="table table-bordered text-dark">
-													<tr>
-														<th>Operator</th>
-														<th>Deskripsi</th>
-														<th>Contoh</th>
-													</tr>
-													<tr>
-														<td>+</td>
-														<td>Penambahan</td>
-														<td>A + B jadi 30</td>
-													</tr>
-													<tr>
-														<td>-</td>
-														<td>Pengurangan</td>
-														<td>A - B jadi -10</td>
-													</tr>
-													<tr>
-														<td>*</td>
-														<td>Pengalian</td>
-														<td>A * B jadi 200</td>
-													</tr>
-													<tr>
-														<td>/</td>
-														<td>Pembagian</td>
-														<td>B / A jadi 2</td>
-													</tr>
-													<tr>
-														<td>%</td>
-														<td>Modulus</td>
-														<td>B % A jadi 0</td>
-													</tr>
-												</table>
-												<p><b>2. Operator Komparasi</b></p>
-												<table class="table table-bordered text-dark">
-														<tr>
-															<th>Operator</th>
-															<th>Deskripsi</th>
-															<th>Contoh</th>
-														</tr>
-														<tr>
-															<td>=</td>
-															<td>Sama dengan</td>
-															<td>A = B maka <mark>FALSE</mark></td>
-														</tr>
-														<tr>
-															<td>!=</td>
-															<td>Tidak sama dengan</td>
-															<td>A != B maka <mark>TRUE</mark></td>
-														</tr>
-														<tr>
-															<td><></td>
-															<td>Tidak sama dengan</td>
-															<td>A <> B maka <mark>TRUE</mark></td>
-														</tr>
-														<tr>
-															<td>></td>
-															<td>Lebih besar dari</td>
-															<td>A > B maka <mark>FALSE</mark></td>
-														</tr>
-														<tr>
-															<td><</td>
-															<td>Lebih kecil dari</td>
-															<td>A < B maka <mark>TRUE</mark></td>
-														</tr>
-														<tr>
-															<td>>=</td>
-															<td>Lebih besar sama dengan dari</td>
-															<td>A >= B maka <mark>FALSE</mark></td>
-														</tr>
-														<tr>
-															<td><=</td>
-															<td>Lebih kecil sama dengan dari</td>
-															<td>A <= B maka <mark>TRUE</mark></td>
-														</tr>
-													</table>
-												<p style="text-align: justify;">Contoh : ada satu tabel bernama pengguna dengan atribut nama, umur, gaji. Jika ingin melihat pengguna yang jika umurnya ditambah 10 akan lebih dari 30, maka query nya akan menjadi seperti dibawah ini:</p>
-												<p class="text-center"><b>SELECT nama, umur, gaji FROM pengguna WHERE umur + 10 > 30;</b></p>
+											<p style="text-indent:50px;text-align: justify;">Select berfungsi untuk memspesifikasikan nama-nama kolom yang akan ditampilkan. Nama-nama kolom dituliskan setelah klausa ini. Cara penggunaan SELECT adalah sebagai berikut :</p>
+											<p class="text-center"><b>SELECT col1, col2, col3, … , coln FROM table_name;</b></p>
+											<p style="text-indent:50px;text-align: justify;">Jika ingin menggunakan SELECT dengan suatu kondisi bisa menggunakan query dengan format seperti dibawah ini:</p>
+											<p class="text-center"><b>SELECT col1, col2, col3, … , coln FROM table_name WHERE [condition];</b></p>
+											<p style="text-indent:50px;text-align: justify;">Query diatas berfungsi untuk melihat data yang ada di col1, col2, col3, hingga coln dari tabel yang bernama table_name. Jika ingin melihat semua data yang ada di semua kolom dari table_name bisa menggunakan query seperti dibawah ini:</p>
+											<p class="text-center"><b>SELECT  *  FROM table_name;</b></p>
 										</div>
 
 										<div class="tab_panel_faq">
@@ -353,15 +232,36 @@
 
 								<!-- Curriculum -->
 								<div class="tab_panel tab_panel_2">
-									<div class="tab_panel_content">
-										<div class="tab_panel_title">SHIDQI AQIL</div>
-										<div class="tab_panel_content">
-											<div class="tab_panel_text">
-												<p>iodwughiogdwuoiwqugdgwu</p>
-											</div>
+									<div class="tab_panel_content" id="cekomentar">
+										<?php 
+											include 'koneksi.php';
+											$sql = "SELECT nama, komen FROM komentar WHERE idmateri = 2";
+											$query = mysqli_query($conn,$sql);
+											$row = mysqli_num_rows($query);
+											if ($row>0){
+												while ($row = mysqli_fetch_array($query)){ ?>
+													<div class="tab_panel_title"><?php echo $row['nama']; ?></div>
+													<div class="tab_panel_content">
+														<div class="tab_panel_text">
+															<p><?php echo $row['komen']; ?></p>
+														</div>
 
-											<!-- Dropdowns -->
-										</div>
+														<!-- Dropdowns -->
+													</div>
+													<hr>
+										<?php
+											}
+										}else{ ?>
+											<div class="tab_panel_content">
+												<div class="tab_panel_text">
+													<p class="text-center">Belum Ada Komentar</p>
+												</div>
+
+													<!-- Dropdowns -->
+											</div>
+										<?php
+											}
+										?>
 									</div>
 								</div>
 
@@ -473,22 +373,22 @@
 							<div class="container">
 								<div class="sidebar_section_title mt-3">Diskusi</div>
 								<div class="sidebar_feature">
-	
-	
+
+
 									<!-- Features -->
 									<div class="feature_list">
-	
+
 										<!-- Feature -->
-										<form class="counter_form_content d-flex flex-column" method="post" action="komen.php">
+										<form method="POST" class="counter_form_content d-flex flex-column" action="komen.php">
 											<label for="nama"><b>Nama : </b></label>
-											<input type="text" id="nama" name="nama" class="counter_input  align-items-center justify-content-center" placeholder="Your Name:" required="required">
+											<input type="text" name="nama" id="nama" class="counter_input align-items-center justify-content-center" placeholder="Your Name:" required="required">
 											<label for="komen"><b>Pesan : </b></label>
-											<textarea id="komen" name="komen" class="counter_input counter_text_input  align-items-center justify-content-center" placeholder="Message:" required="required"></textarea>
-											<button type="submit" name="kirimoperator" id="kirimoperator" class="counter_form_button mb-3">Kirim</button>
+											<textarea class="counter_input counter_text_input align-items-center justify-content-center" name="komen" id="komen" placeholder="Message:" required="required"></textarea>
+											<button type="submit" class="counter_form_button mb-3" id="kirimoperator" name="kirimoperator">Kirim</button>
 										</form>
-	
+
 										<!-- Feature -->
-	
+
 									</div>
 								</div>
 							</div>
@@ -523,11 +423,14 @@
 
 			</footer>
 
-
-
-
-
-<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>			
+<script>
+	// $(document).ready(function(){
+	// 	$('#kirim').click(function(){
+	// 		alert('Pesan Terkirim');
+	// 	});
+	// });
+</script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
 <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>

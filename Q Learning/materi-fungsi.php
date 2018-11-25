@@ -332,14 +332,35 @@
 								<!-- Curriculum -->
 								<div class="tab_panel tab_panel_2">
 									<div class="tab_panel_content">
-										<div class="tab_panel_title">SHIDQI AQIL</div>
-										<div class="tab_panel_content">
-											<div class="tab_panel_text">
-												<p>iodwughiogdwuoiwqugdgwu</p>
-											</div>
+										<?php 
+											include 'koneksi.php';
+											$sql = "SELECT nama, komen FROM komentar WHERE idmateri = 3";
+											$query = mysqli_query($conn,$sql);
+											$row = mysqli_num_rows($query);
+											if ($row>0){
+												while ($row = mysqli_fetch_array($query)){ ?>
+													<div class="tab_panel_title"><?php echo $row['nama']; ?></div>
+													<div class="tab_panel_content">
+														<div class="tab_panel_text">
+															<p><?php echo $row['komen']; ?></p>
+														</div>
 
-											<!-- Dropdowns -->
-										</div>
+														<!-- Dropdowns -->
+													</div>
+													<hr>
+										<?php
+												}
+											}else{ ?>
+												<div class="tab_panel_content">
+													<div class="tab_panel_text">
+														<p class="text-center">Belum Ada Komentar</p>
+													</div>
+
+													<!-- Dropdowns -->
+												</div>
+										<?php
+											}
+										?>
 									</div>
 								</div>
 

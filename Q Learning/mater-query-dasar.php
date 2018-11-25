@@ -251,6 +251,15 @@
 													<hr>
 										<?php
 												}
+										}else{ ?>
+											<div class="tab_panel_content">
+												<div class="tab_panel_text">
+													<p class="text-center">Belum Ada Komentar</p>
+												</div>
+
+													<!-- Dropdowns -->
+											</div>
+										<?php
 											}
 										?>
 									</div>
