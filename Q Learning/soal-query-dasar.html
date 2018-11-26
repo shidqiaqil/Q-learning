@@ -310,42 +310,42 @@
 		<h3>Vocabulary Quiz I</h3>
 		<div class="container" style="margin-top : 5%">
 			<h3 style="color:orangered;">Pilihlah salah satu jawaban yang benar dari soal dibawah ini </h3>
-			<form method="post" action="mailto:raizen@mail.utexas.edu?subject=Vocabulary Quiz 1" enctype="text/plain">
+			<form  action="#" enctype="text/plain" onsubmit="return checkSoal(this);">
 
 				<img src="images/sc_CASETools2_image004.jpg" style="margin-top:2%;margin-bottom:2%;">
 				<P> 1. sytanx sql yang benar untuk menampilkan tabel first name dan last name adalah?
 					<BR>
-					<input type="radio" name="1.The word which means house is" value="maison">select firstname, lastname from employees
+					<input type="radio" name="soal1" value="A">select firstname, lastname from employees
 					<BR>
-					<input type="radio" name="1.The word which means house is" value="quatre">select first_name, last_name from employees;
+					<input type="radio" name="soal1" value="B">select first_name, last_name from employees;
 					<BR>
-					<input type="radio" name="1.The word which means house is" value="soleil">select First_name, last_name from Employees;
+					<input type="radio" name="soal1" value="C">select First_name, last_name from Employees;
 					<BR>
-					<input type="radio" name="1.The word which means house is" value="poisson">select from Employees
+					<input type="radio" name="soal1" value="D">select from Employees
 					<BR>
 				</p>
 
 				<P> 2. syntax sql untuk menampilkan first name dan salary yang lebih dari 20000 adalah y
 					<BR>
-					<input type="radio" name="2. The word which means fish is" value="maison">select first_name salary 20000 from employees
+					<input type="radio" name="soal2" value="A">select first_name salary 20000 from employees
 					<BR>
-					<input type="radio" name="2. The word which means fish is" value="valise">select first_name salary from employees
+					<input type="radio" name="soal2" value="B">select first_name salary from employees
 					<BR>
-					<input type="radio" name="2. The word which means fish is" value="soleil">select first_name salary where salary=20000 employees;
+					<input type="radio" name="soal2" value="C">select first_name salary where salary=20000 employees;
 					<BR>
-					<input type="radio" name="2. The word which means fish is" value="poisson">select first_name salary where salary=salary 20000 from employees;
+					<input type="radio" name="soal2" value="D">select first_name salary where salary=salary 20000 from employees;
 					<BR>
 				</p>
 
 				<P>3. The word which means "suitcase" is:
 					<BR>
-					<input type="radio" name="3. The word which means suitcase is" value="renard">renard
+					<input type="radio" name="soal3" value="A">renard
 					<BR>
-					<input type="radio" name="3. The word which means suitcase is" value="valise">valise
+					<input type="radio" name="soal3" value="B">valise
 					<BR>
-					<input type="radio" name="3. The word which means suitcase is" value="soleil">soleil
+					<input type="radio" name="soal3" value="C">soleil
 					<BR>
-					<input type="radio" name="3. The word which means suitcase is" value="poisson">poisson
+					<input type="radio" name="soal3" value="D">poisson
 					<BR>
 				</p>
 
@@ -399,5 +399,34 @@
 	<script src="plugins/parallax-js-master/parallax.min.js"></script>
 	<script src="js/custom.js"></script>
 </body>
+<script>
+	function checkSoal(tform){
+		var jwb1 = document.querySelector('input[name="soal1"]:checked').value;;
+		var jwb2 = document.querySelector('input[name="soal2"]:checked').value;
+		var jbw3 = document.querySelector('input[name="soal3"]:checked').value;
+		var status = new Array();
+		if (jwb1 == "A" ){
+			status[0]="BENAR";
+		} else {
+			status[0]=FALSE;
+		};
+		if (jwb2 == "B"){
+			status[1]="BENAR";
+			hasil
+		} else {
+			status[1]="SALAH";
+		};
+		if (jbw3 == "C"){
+			status[2]="BENAR";
+		}else {
+			status[2]="SALAH";
+		};
+	
+		for (var i=0; i<status.length; i++) {
+  			document.write("Nomor" +i + status[i]+ "<br />");
+		}
+		
+	}
+	</script>
 
 </html>
