@@ -16,6 +16,8 @@
 <link rel="stylesheet" type="text/css" href="styles/course_responsive.css">
 <link rel="stylesheet" type="text/css" href="styles/dropdown.css">
 <link rel="stylesheet" type="text/css" href="styles/about.css">
+
+</head>
 <style>
 	.margin1{
 		margin-left: 20px;
@@ -32,7 +34,6 @@
 		overflow-y: auto;
 	}
 </style>
-</head>
 <body>
 
 <div class="super_container">
@@ -65,7 +66,7 @@
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav">
 									<li class="nav-item margin1">
-										<a class="nav-link dropbtn font1" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+										<a class="nav-link dropbtn font1" href="index.php">Beranda <span class="sr-only">(current)</span></a>
 									</li>
 									<li class="nav-item active dropdown margin1">
 										<a class="nav-link dropbtn dropdown-toggle font1" style="color:#14bdee;" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -81,9 +82,9 @@
 													<li class="dropdown-divider"></li>
 													<li class="dropdown-item" style="padding:0%"><a href="materi-operator.php">Operator</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="materi-fungsi.php">Fungsi</a></li>
+													<li class="dropdown-item" style="padding:0%"><a  href="materi-fungsi.php">Fungsi</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="materi-kondisional.php">Kondisional</a></li>
+													<li class="dropdown-item" style="padding:0%"><a style="color:#14bdee;" href="materi-kondisional.php">Kondisional</a></li>
 													<li class="dropdown-divider"></li>
 													<li class="dropdown-item" style="padding:0%"><a href="materi-orderby.php">Order By</a></li>
 												</ul>
@@ -91,13 +92,13 @@
 											<li class="dropdown-submenu">
 												<a class="dropdown-item" href="#">Intermediate Query</a>
 												<ul class="dropdown-menu" role="menu">
-													<li class="dropdown-item" style="padding:0%"><a href="#">Pengenalan</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="Pengenalan-intermediete.php">Pengenalan</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="#">Inner Join</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="materi-innerjoin.php">Inner Join</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="#">Natural Join</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="materi-naturaljoin.php">Natural Join</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="#">Cross Join</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="materi-crossjoin.php">Cross Join</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -118,6 +119,49 @@
 				</div>
 			</div>
 		</nav>
+		<!-- <div class="header_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+							<div class="logo_container">
+								<a href="#">
+									<div class="logo_text">Q-LEAR<span>NING</span></div>
+								</a>
+							</div>
+							<nav class="main_nav_container ml-auto navbar-fixed-top">
+								<ul class="main_nav">
+									<li><a href="#">Beranda</a></li>
+									<div class="dropdown">
+									  <li>
+											<a href="#" class="dropbtn " style="color: #14bdee; ">Materi <i class="fa fa-caret-down"></i></a>
+										</li>
+									  <div class="dropdown-content">
+									    <a href="#">Pengenalan</a>
+									    <a href="#">Query Dasar</a>
+									    <a href="#" style="color: #14bdee;">Operator</a>
+											<a href="#">Fungsi</a>
+											<a href="#">Kondisional</a>
+											<a href="#">Order by</a>
+									  </div>
+									</div>
+									<div class="dropdown">
+										<li>
+											<a href="#" class="dropbtn">Soal <i class="fa fa-caret-down"></i></a>
+										</li>
+										<div class="dropdown-content">
+											<a href="#">Link 1</a>
+											<a href="#">Link 2</a>
+											<a href="#">Link 3</a>
+										</div>
+								</ul>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
 
 		<!-- Header Search Panel -->
 		<div class="header_search_container">
@@ -157,13 +201,13 @@
 				<div class="col-lg-8">
 
 					<div class="course_container" style="margin-top:6%;">
-						<!-- <div class="course_title">Query Dasar</div> -->
+						<!-- <div class="course_title">Operator</div> -->
 						<div style="margin-top:3%;" class="course_info d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
 
 							<!-- Course Info Item -->
 							<div class="course_info_item">
 								<div class="course_info_title">Durasi :</div>
-								<div class="course_info_text"><a href="#">06:54</a></div>
+								<div class="course_info_text"><a href="#">02:36</a></div>
 							</div>
 
 							<!-- Course Info Item -->
@@ -182,8 +226,7 @@
 
 						<!-- Course Image -->
 						<div class="course_image">
-							<iframe style="height:350px;width:100%;" src="https://www.youtube.com/embed/OlT3FispsMU" frameborder="0" allow="accelerometer;
-							autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="100%" height="350px" src="https://www.youtube.com/embed/gstw8w3J4_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 
 						<!-- Course Tabs -->
@@ -196,15 +239,108 @@
 
 								<!-- Description -->
 								<div class="tab_panel active">
-									<div class="tab_panel_title text-center"><b>SELECT</b></div>
+									<div class="tab_panel_title text-center">KLAUSA KONDISIONAL</div>
 									<div class="tab_panel_content">
 										<div class="tab_panel_text">
-											<p style="text-indent:50px;text-align: justify;">Select berfungsi untuk memspesifikasikan nama-nama kolom yang akan ditampilkan. Nama-nama kolom dituliskan setelah klausa ini. Cara penggunaan SELECT adalah sebagai berikut :</p>
-											<p class="text-center"><b>SELECT col1, col2, col3, … , coln FROM table_name;</b></p>
-											<p style="text-indent:50px;text-align: justify;">Jika ingin menggunakan SELECT dengan suatu kondisi bisa menggunakan query dengan format seperti dibawah ini:</p>
-											<p class="text-center"><b>SELECT col1, col2, col3, … , coln FROM table_name WHERE [condition];</b></p>
-											<p style="text-indent:50px;text-align: justify;">Query diatas berfungsi untuk melihat data yang ada di col1, col2, col3, hingga coln dari tabel yang bernama table_name. Jika ingin melihat semua data yang ada di semua kolom dari table_name bisa menggunakan query seperti dibawah ini:</p>
-											<p class="text-center"><b>SELECT  *  FROM table_name;</b></p>
+											<p style="text-indent:50px;text-align: justify;">Terdapat dua metodde yang digunakan untuk menyatakan ekspresi kondisional, yaitu Case Expression dan Decode function. fungsi dari case expression sendiri adalah untuk memfasilitasi kebutuhan
+												 kondisional deengan mengerjakan pekerjaan yang ada dalam statement IF-THEN-ELSE. cara penggunaan case expression sebagai berikut:</p>
+											<p class="text-center"><b>SELECT expression, CASE expression WHEN comparison_expression1 then return_expression1 [WHEN comparison_expression2 then return_expression2 WHEN comparison_expression-n THEN return_expression-n ELSE else_expression] END from [table]</b></p>
+											<p style="text-indent:50px;text-align: justify;">Fungsi DECODE memiliki fungsionalitas yang sama dengan CASE expression</p>
+											<p class="text-center"><b>DECODE (col|expression,search1, result1)</b></p>
+											<p style="text-indent:50px;text-align: justify;">Bentuk Ekspresi  menggunakan klausa IF dalam perintah SQL :</p>
+											<p class="text-center"><b>IF(kondisional,expr_true,expr_false)</b></p>
+											<table class="table table-bordered text-dark">
+												<tr>
+													<td>Name</td>
+													<td>Deskripsi</td>
+													<td>Tipe Hasil</td>
+												</tr>
+												<tr>
+													<td>expr</td>
+													<td>Bentuk ekpresi, kondisional</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>expr_true</td>
+													<td>Nilai jika kondisional bernilai TRUE.</td>
+													<td>Bisa bertipe : string, float, integer</td>
+												</tr>
+												<tr>
+													<td>expr_false</td>
+													<td>Nilai jika kondisional bernilai TRUE.</td>
+													<td>Bisa bertipe : string, float, integer </td>
+												</tr>
+											</table>
+											<div class="">
+
+											</div>
+											<p style="text-indent:50px;text-align: justify;">Contoh penggunaan case adalah sebagai berikut:
+											 </p>
+											 <p style="text-indent:50px;text-align: justify;"> misal saya memiliki sebuah tabel number dengan sebuah kolom nomor yang memuat data bertipe integer.</p>
+											 <table class="table table-bordered text-dark">
+												 <tr>
+													 <td>Nomor</td>
+
+
+												 </tr>
+												 <tr>
+													 <td>1</td>
+
+												 </tr>
+												 <tr>
+													 <td>3</td>
+
+												 </tr>
+												 <tr>
+													 <td>32</td>
+
+												 </tr>
+												 <tr>
+													 <td>37</td>
+
+												 </tr>
+												 <tr>
+													 <td>38</td>
+
+												 </tr>
+											 </table>
+												<p class="text-center"><b>SELECT nomor,
+												(CASE WHEN nomor % 2 = 0 THEN 'Bilangan Genap'
+												ELSE 'Bilangan Ganjil' END) AS status
+												FROM number ORDER BY nomor;</b></p>
+												<table class="table table-bordered text-dark">
+													<tr>
+														<td>Nomor</td>
+														<td>status</td>
+
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>ganjil</td>
+
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>ganjil</td>
+
+													</tr>
+													<tr>
+														<td>32</td>
+														<td>genap</td>
+
+													</tr>
+													<tr>
+														<td>37</td>
+														<td>ganjil</td>
+
+													</tr>
+													<tr>
+														<td>38</td>
+														<td>genap</td>
+
+													</tr>
+												</table>
+
 										</div>
 
 										<div class="tab_panel_faq">
@@ -232,16 +368,36 @@
 
 								<!-- Curriculum -->
 								<div class="tab_panel tab_panel_2">
-									<div class="tab_panel_content" id="cekomentar">
-										<div class="tab_panel_title">SHIDQI AQIL</div>
-										<div class="tab_panel_content">
-											<div class="tab_panel_text">
-												<p>iodwughiogdwuoiwqugdgwu</p>
-											</div>
+									<div class="tab_panel_content">
+									<?php 
+										include 'koneksi.php';
+										$sql = "SELECT nama, komen FROM komentar WHERE idmateri = 4";
+										$query = mysqli_query($conn,$sql);
+										$row = mysqli_num_rows($query);
+										if ($row>0){
+											while ($row = mysqli_fetch_array($query)){ ?>
+												<div class="tab_panel_title"><?php echo $row['nama']; ?></div>
+												<div class="tab_panel_content">
+													<div class="tab_panel_text">
+														<p><?php echo $row['komen']; ?></p>
+													</div>
 
-											<!-- Dropdowns -->
-										</div>
-										<hr>
+													<!-- Dropdowns -->
+												</div>
+												<hr>
+										<?php
+											}
+										}else{ ?>
+											<div class="tab_panel_content">
+												<div class="tab_panel_text">
+													<p class="text-center">Belum Ada Diskusi</p>
+												</div>
+
+													<!-- Dropdowns -->
+											</div>
+									<?php
+										}
+									?>
 									</div>
 								</div>
 
@@ -359,12 +515,12 @@
 									<div class="feature_list">
 
 										<!-- Feature -->
-										<form method="POST" class="counter_form_content d-flex flex-column" action="">
+										<form method="POST" class="counter_form_content d-flex flex-column" action="komen.php">
 											<label for="nama"><b>Nama : </b></label>
-											<input type="text" name="nama" id="nama" class="counter_input align-items-center justify-content-center" placeholder="Your Name:" required="required">
+											<input type="text" id="nama" name="nama" class="counter_input  align-items-center justify-content-center" placeholder="Your Name:" required="required">
 											<label for="komen"><b>Pesan : </b></label>
-											<textarea class="counter_input counter_text_input align-items-center justify-content-center" name="komen" id="komen" placeholder="Message:" required="required"></textarea>
-											<button type="submit" class="counter_form_button mb-3" id="kirim" name="kirim">Kirim</button>
+											<textarea id="komen" name="komen" class="counter_input counter_text_input  align-items-center justify-content-center" placeholder="Message:" required="required"></textarea>
+											<button type="submit" name="kirimkondisional" id="kirimkondisional" class="counter_form_button mb-3">Kirim</button>
 										</form>
 
 										<!-- Feature -->
@@ -403,14 +559,11 @@
 
 			</footer>
 
-<script src="js/jquery-3.2.1.min.js"></script>			
-<script>
-	// $(document).ready(function(){
-	// 	$('#kirim').click(function(){
-	// 		alert('Pesan Terkirim');
-	// 	});
-	// });
-</script>
+
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
 <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>

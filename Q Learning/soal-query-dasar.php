@@ -66,7 +66,7 @@
 								<div class="collapse navbar-collapse" id="navbarSupportedContent">
 									<ul class="navbar-nav">
 										<li class="nav-item active margin1">
-											<a class="nav-link dropbtn font1" style="color:#14bdee;" href="index.html">Beranda
+											<a class="nav-link dropbtn font1" style="color:#14bdee;" href="index.php">Beranda
 												<span class="sr-only">(current)</span>
 											</a>
 										</li>

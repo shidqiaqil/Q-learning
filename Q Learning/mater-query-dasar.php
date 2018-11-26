@@ -77,7 +77,7 @@
 												<ul class="dropdown-menu" role="menu">
 													<li class="dropdown-item" style="padding:0%"><a href="pengenalan.php">Pengenalan</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="mater-query-dasar.php">Select</a></li>
+													<li class="dropdown-item" style="padding:0%"><a style="color:#14bdee;" href="mater-query-dasar.php">Select</a></li>
 													<li class="dropdown-divider"></li>
 													<li class="dropdown-item" style="padding:0%"><a href="materi-operator.php">Operator</a></li>
 													<li class="dropdown-divider"></li>
@@ -91,13 +91,13 @@
 											<li class="dropdown-submenu">
 												<a class="dropdown-item" href="#">Intermediate Query</a>
 												<ul class="dropdown-menu" role="menu">
-													<li class="dropdown-item" style="padding:0%"><a href="#">Pengenalan</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="pengenalan.php">Pengenalan</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="#">Inner Join</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="materi-innerjoin.php">Inner Join</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="#">Natural Join</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="materi-naturaljoin.php">Natural Join</a></li>
 													<li class="dropdown-divider"></li>
-													<li class="dropdown-item" style="padding:0%"><a href="#">Cross Join</a></li>
+													<li class="dropdown-item" style="padding:0%"><a href="materi-crossjoin.php">Cross Join</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -108,7 +108,7 @@
 										</a>
 										<div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
 											<a class="dropdown-item" href="soal-query-dasar.html">Basic Query</a>
-											<a class="dropdown-item" href="#">Intermediate Query</a>
+											<a class="dropdown-item" href="Pengenalan-intermediete.php">Intermediate Query</a>
 										</div>
 									</li>
 								</ul>
@@ -163,7 +163,7 @@
 							<!-- Course Info Item -->
 							<div class="course_info_item">
 								<div class="course_info_title">Durasi :</div>
-								<div class="course_info_text"><a href="#">06:54</a></div>
+								<div class="course_info_text"><a href="#">03:00</a></div>
 							</div>
 
 							<!-- Course Info Item -->
@@ -182,14 +182,13 @@
 
 						<!-- Course Image -->
 						<div class="course_image">
-							<iframe style="height:350px;width:100%;" src="https://www.youtube.com/embed/OlT3FispsMU" frameborder="0" allow="accelerometer;
-							autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="100%" height="350px" src="https://www.youtube.com/embed/HEbLrK1rD8A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 
 						<!-- Course Tabs -->
 						<div class="course_tabs_container">
 							<div class="tabs d-flex flex-row align-items-center justify-content-start">
-								<div class="tab active">description</div>
+								<div class="tab active">deskripsi</div>
 								<div class="tab ">Diskusi</div>
 							</div>
 							<div class="tab_panels">
@@ -233,7 +232,7 @@
 								<!-- Curriculum -->
 								<div class="tab_panel tab_panel_2">
 									<div class="tab_panel_content" id="cekomentar">
-										<?php 
+										<?php
 											include 'koneksi.php';
 											$sql = "SELECT nama, komen FROM komentar WHERE idmateri = 1";
 											$query = mysqli_query($conn,$sql);
@@ -251,6 +250,15 @@
 													<hr>
 										<?php
 												}
+										}else{ ?>
+											<div class="tab_panel_content">
+												<div class="tab_panel_text">
+													<p class="text-center">Belum Ada Diskusi</p>
+												</div>
+
+													<!-- Dropdowns -->
+											</div>
+										<?php
 											}
 										?>
 									</div>
@@ -414,7 +422,7 @@
 
 			</footer>
 
-<script src="js/jquery-3.2.1.min.js"></script>			
+<script src="js/jquery-3.2.1.min.js"></script>
 <script>
 	// $(document).ready(function(){
 	// 	$('#kirim').click(function(){
