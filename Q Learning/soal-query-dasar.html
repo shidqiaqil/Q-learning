@@ -299,21 +299,16 @@
 
 	Copy the entire text BELOW THIS STATEMENT. Then replace the text in pink with your own text, while leaving the blue text
 	intact. Save the document as "documentname.html" (e.g., quiz1.html), and you are ready to post it on your server!
-	<html>
+	
 
-	<head>
-		<title>multiple-choice quiz form</title>
-	</head>
+	
 
-	<body bgcolor=#ffffff>
-
-		<h3>Vocabulary Quiz I</h3>
 		<div class="container" style="margin-top : 5%">
 			<h3 style="color:orangered;">Pilihlah salah satu jawaban yang benar dari soal dibawah ini </h3>
-			<form  action="#" enctype="text/plain" onsubmit="return checkSoal(this);">
+			<form  action="#" enctype="text/plain" onsubmit="return checkSoal(this)">
 
 				<img src="images/sc_CASETools2_image004.jpg" style="margin-top:2%;margin-bottom:2%;">
-				<P> 1. sytanx sql yang benar untuk menampilkan tabel first name dan last name adalah?
+				<P id="p1" > 1. sytanx sql yang benar untuk menampilkan tabel first name dan last name adalah?
 					<BR>
 					<input type="radio" name="soal1" value="A">select firstname, lastname from employees
 					<BR>
@@ -325,7 +320,7 @@
 					<BR>
 				</p>
 
-				<P> 2. syntax sql untuk menampilkan first name dan salary yang lebih dari 20000 adalah y
+				<P id="p2"> 2. syntax sql untuk menampilkan first name dan salary yang lebih dari 20000 adalah y
 					<BR>
 					<input type="radio" name="soal2" value="A">select first_name salary 20000 from employees
 					<BR>
@@ -337,7 +332,7 @@
 					<BR>
 				</p>
 
-				<P>3. The word which means "suitcase" is:
+				<P id="p3" >3. The word which means "suitcase" is:
 					<BR>
 					<input type="radio" name="soal3" value="A">renard
 					<BR>
@@ -357,9 +352,8 @@
 
 			</form>
 		</div>
-	</body>
 
-	</html>
+	
 
 
 	<!-- Features Item -->
@@ -401,14 +395,15 @@
 </body>
 <script>
 	function checkSoal(tform){
-		var jwb1 = document.querySelector('input[name="soal1"]:checked').value;;
+		var jwb1 = document.querySelector('input[name="soal1"]:checked').value;
 		var jwb2 = document.querySelector('input[name="soal2"]:checked').value;
-		var jbw3 = document.querySelector('input[name="soal3"]:checked').value;
+		var jwb3 = document.querySelector('input[name="soal3"]:checked').value;
 		var status = new Array();
+		var jum;
 		if (jwb1 == "A" ){
 			status[0]="BENAR";
 		} else {
-			status[0]=FALSE;
+			status[0]="SALAH";
 		};
 		if (jwb2 == "B"){
 			status[1]="BENAR";
@@ -416,14 +411,17 @@
 		} else {
 			status[1]="SALAH";
 		};
-		if (jbw3 == "C"){
+		if (jwb3 == "C"){
 			status[2]="BENAR";
 		}else {
 			status[2]="SALAH";
 		};
-	
+		
+		//document.getElementById("p"+jum.toString()).innerHTML="No " + jum + "  " + status[0] + "<br/>";
 		for (var i=0; i<status.length; i++) {
-  			document.write("Nomor" +i + status[i]+ "<br />");
+			jum = i+1;
+  			document.getElementById("p"+jum.toString()).innerHTML=jum+". " + status[i] + "<br/>";
+
 		}
 		
 	}
