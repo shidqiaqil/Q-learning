@@ -290,7 +290,7 @@
 		<h3>Vocabulary Quiz I</h3>
 		<div class="container" style="margin-top : 5%">
 			<h3 style="color:orangered;">Pilihlah salah satu jawaban yang benar dari soal dibawah ini </h3>
-			<form method="post" action="checkSoal()" enctype="text/plain">
+			<form method="post" action="#" enctype="text/plain" onsubmit="return checkSoal(this)">
 
 				<img src="images/sc_CASETools2_image004.jpg" style="margin-top:2%;margin-bottom:2%;">
 				<P id="p1" > 1. sytanx sql yang benar untuk menampilkan tabel first name dan last name adalah?
