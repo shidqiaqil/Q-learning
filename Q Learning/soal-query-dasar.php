@@ -293,7 +293,7 @@
 			<form method="post" action="checkSoal()" enctype="text/plain">
 
 				<img src="images/sc_CASETools2_image004.jpg" style="margin-top:2%;margin-bottom:2%;">
-				<P> 1. sytanx sql yang benar untuk menampilkan tabel first name dan last name adalah?
+				<P id="p1" > 1. sytanx sql yang benar untuk menampilkan tabel first name dan last name adalah?
 					<BR>
 					<input type="radio" name="soal1" value="A">select firstname, lastname from employees
 					<BR>
@@ -305,7 +305,7 @@
 					<BR>
 				</p>
 
-				<P> 2. syntax sql untuk menampilkan first name dan salary yang lebih dari 20000 adalah y
+				<P id="p2"> 2. syntax sql untuk menampilkan first name dan salary yang lebih dari 20000 adalah y
 					<BR>
 					<input type="radio" name="soal2" value="A">select first_name salary 20000 from employees
 					<BR>
@@ -317,7 +317,7 @@
 					<BR>
 				</p>
 
-				<P>3. The word which means "suitcase" is:
+				<P id="p3" >3. The word which means "suitcase" is:
 					<BR>
 					<input type="radio" name="soal3" value="A">renard
 					<BR>
@@ -379,27 +379,36 @@
 	<script src="plugins/parallax-js-master/parallax.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script>
-	function checkSoal(){
-		var jwb1 = document.querySelector('input[name="soal1"]:checked').value;;
+	function checkSoal(tform){
+		var jwb1 = document.querySelector('input[name="soal1"]:checked').value;
 		var jwb2 = document.querySelector('input[name="soal2"]:checked').value;
-		var jbw3 = document.querySelector('input[name="soal3"]:checked').value;;
-		var status = [];
-		if (jwb1 == 'A' ){
-			status[0]=TRUE;
-			alert(status[0]);
+		var jwb3 = document.querySelector('input[name="soal3"]:checked').value;
+		var status = new Array();
+		var jum;
+		if (jwb1 == "A" ){
+			status[0]="BENAR";
 		} else {
-			status[0]=FALSE;
-		}
-		if (jwb2 == 'B'){
-			status[1]=TRUE;
+			status[0]="SALAH";
+		};
+		if (jwb2 == "B"){
+			status[1]="BENAR";
+			hasil
 		} else {
-			status[1]=FALSE;
-		}
-		if (jbw3)=='C'{
-			status[2]=TRUE;
+			status[1]="SALAH";
+		};
+		if (jwb3 == "C"){
+			status[2]="BENAR";
 		}else {
-			status[2]=FALSE;
+			status[2]="SALAH";
+		};
+		
+		//document.getElementById("p"+jum.toString()).innerHTML="No " + jum + "  " + status[0] + "<br/>";
+		for (var i=0; i<status.length; i++) {
+			jum = i+1;
+  			document.getElementById("p"+jum.toString()).innerHTML=jum+". " + status[i] + "<br/>";
+
 		}
+		
 	}
 	</script>
 </body>
