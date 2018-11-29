@@ -287,7 +287,7 @@
 
 	<body bgcolor=#ffffff>
 
-		<h3>Vocabulary Quiz I</h3>
+		
 		<div class="container" style="margin-top : 5%">
 			<h3 style="color:orangered;">Pilihlah salah satu jawaban yang benar dari soal dibawah ini </h3>
 			<form method="post" action="#" enctype="text/plain">
