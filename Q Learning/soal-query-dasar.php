@@ -65,8 +65,8 @@
 								</ul>
 								<div class="collapse navbar-collapse" id="navbarSupportedContent">
 									<ul class="navbar-nav">
-										<li class="nav-item active margin1">
-											<a class="nav-link dropbtn font1" style="color:#14bdee;" href="index.php">Beranda
+										<li class="nav-item margin1">
+											<a class="nav-link dropbtn font1"  href="index.php">Beranda
 												<span class="sr-only">(current)</span>
 											</a>
 										</li>
@@ -106,14 +106,14 @@
 											</li>
 										</ul>
 										</li>
-										<li class="nav-item dropdown margin1">
-											<a class="nav-link dropbtn dropdown-toggle font1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+										<li class="nav-item active dropdown margin1">
+											<a class="nav-link dropbtn dropdown-toggle font1" style="color:#14bdee" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
 											    aria-expanded="false">
 												Soal
 											</a>
 											<div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-												<a class="dropdown-item" href="soal-query-dasar.html">Basic Query</a>
-												<a class="dropdown-item" href="#">Intermediate Query</a>
+												<a class="dropdown-item" href="soal-query-dasar.php">Basic Query</a>
+												<a class="dropdown-item" href="soal-intermediate.php">Intermediate Query</a>
 											</div>
 										</li>
 									</ul>

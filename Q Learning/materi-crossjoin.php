@@ -107,8 +107,8 @@
 											Soal
 										</a>
 										<div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-											<a class="dropdown-item" href="soal-query-dasar.html">Basic Query</a>
-											<a class="dropdown-item" href="Pengenalan-intermediete.php">Intermediate Query</a>
+											<a class="dropdown-item" href="soal-query-dasar.php">Basic Query</a>
+											<a class="dropdown-item" href="soal-intermediate.php">Intermediate Query</a>
 										</div>
 									</li>
 								</ul>
