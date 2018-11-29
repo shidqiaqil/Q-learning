@@ -332,49 +332,49 @@
 
 				<P id="p4" >4. Tamplikanlah seluruh field yang berada didalam tabel barang:
 					<BR>
-					<input type="radio" name="soal3" value="A">SQL> select * from barang;
+					<input type="radio" name="soal4" value="A">SQL> select * from barang;
 					<BR>
-					<input type="radio" name="soal3" value="B">SQL> select * to barang;
+					<input type="radio" name="soal4" value="B">SQL> select * to barang;
 					<BR>
-					<input type="radio" name="soal3" value="C">SQL> select * from table barang;
+					<input type="radio" name="soal4" value="C">SQL> select * from table barang;
 					<BR>
-					<input type="radio" name="soal3" value="D">SQL> select * from new barang;
+					<input type="radio" name="soal4" value="D">SQL> select * from new barang;
 					<BR>
 				</p>
 
 				<P id="p5" >5. Tampilkan kode barang,nama barang dari tabel barang yang jumalh stok nya 20:
 					<BR>
-					<input type="radio" name="soal3" value="A">SQL> SELECT ON KODE_BARANG,NAMA_BARANG FROM BARANG WHERE STOCK_BARANG=20;
+					<input type="radio" name="soal5" value="A">SQL> SELECT ON KODE_BARANG,NAMA_BARANG FROM BARANG WHERE STOCK_BARANG=20;
 					<BR>
-					<input type="radio" name="soal3" value="B">SQL> SELECT KODE_BARANG,NAMA_BARANG FROM BARANG WHERE STOCK_BARANG=20;
+					<input type="radio" name="soal5" value="B">SQL> SELECT KODE_BARANG,NAMA_BARANG FROM BARANG WHERE STOCK_BARANG=20;
 					<BR>
-					<input type="radio" name="soal3" value="C">SELECT TO KODE_BARANG,NAMA_BARANG FROM BARANG WHERE STOCK_BARANG=20;
+					<input type="radio" name="soal5" value="C">SELECT TO KODE_BARANG,NAMA_BARANG FROM BARANG WHERE STOCK_BARANG=20;
 					<BR>
-					<input type="radio" name="soal3" value="D">SELECT FROM KODE_BARANG,NAMA_BARANG FROM BARANG WHERE STOCK_BARANG=20;
+					<input type="radio" name="soal5" value="D">SELECT FROM KODE_BARANG,NAMA_BARANG FROM BARANG WHERE STOCK_BARANG=20;
 					<BR>
 				</p>
 
 				<P id="p6" >6. Tampilkan last name,salary dari tabel employees yang salary nya lebih besar dari 12000:
 					<BR>
-					<input type="radio" name="soal3" value="A">SQL> select last_name,salary to employees where salary>12000;
+					<input type="radio" name="soal6" value="A">SQL> select last_name,salary to employees where salary>12000;
 					<BR>
-					<input type="radio" name="soal3" value="B">SQL> select last_name,salary on employees where salary>12000;
+					<input type="radio" name="soal6" value="B">SQL> select last_name,salary on employees where salary>12000;
 					<BR>
-					<input type="radio" name="soal3" value="C">select last_name,salary from employees where salary>12000;
+					<input type="radio" name="soal6" value="C">select last_name,salary from employees where salary>12000;
 					<BR>
-					<input type="radio" name="soal3" value="D">SQL> select last_name,salary employees where salary>12000;
+					<input type="radio" name="soal6" value="D">SQL> select last_name,salary employees where salary>12000;
 					<BR>
 				</p>
 
 				<P id="p7" >7. Tampilkan salary tertinggi dengan kolom alias “GAJI TERTINGGI” dan untuk yang terendah dengan kolom alias “GAJI TERENDAH”:
 					<BR>
-					<input type="radio" name="soal3" value="A">Select value max(salary) as "GAJI TERTINGGI",min(salary) as "GAJI TERENDAH" from employees;
+					<input type="radio" name="soal7" value="A">Select value max(salary) as "GAJI TERTINGGI",min(salary) as "GAJI TERENDAH" from employees;
 					<BR>
-					<input type="radio" name="soal3" value="B">select max(salary) as "GAJI TERTINGGI",min(salary) as "GAJI TERENDAH" from employees;
+					<input type="radio" name="soal7" value="B">select max(salary) as "GAJI TERTINGGI",min(salary) as "GAJI TERENDAH" from employees;
 					<BR>
-					<input type="radio" name="soal3" value="C">select to max(salary) as "GAJI TERTINGGI",min(salary) as "GAJI TERENDAH" from employees;
+					<input type="radio" name="soal7" value="C">select to max(salary) as "GAJI TERTINGGI",min(salary) as "GAJI TERENDAH" from employees;
 					<BR>
-					<input type="radio" name="soal3" value="D">select on max(salary) as "GAJI TERTINGGI",min(salary) as "GAJI TERENDAH" from employees;
+					<input type="radio" name="soal7" value="D">select on max(salary) as "GAJI TERTINGGI",min(salary) as "GAJI TERENDAH" from employees;
 					<BR>
 				</p>
 				<br>
