@@ -49,8 +49,7 @@
 						<div class="row">
 							<div class="col-lg-7 col-md-7 col-sm-7">
 								<a href="#">
-									<div style="margin: 20px 10px;" class="logo_text">Q-LEAR
-										<span>NING</span>
+									<div style="margin: 20px 10px;" class="logo_text">Q-LEAR<span>NING</span>
 									</div>
 								</a>
 							</div>
@@ -66,7 +65,7 @@
 								<div class="collapse navbar-collapse" id="navbarSupportedContent">
 									<ul class="navbar-nav">
 										<li class="nav-item margin1">
-											<a class="nav-link dropbtn font1" style="color:#14bdee;" href="index.php">Beranda
+											<a class="nav-link dropbtn font1" href="index.php">Beranda
 												<span class="sr-only">(current)</span>
 											</a>
 										</li>

@@ -49,8 +49,7 @@
 						<div class="row">
 							<div class="col-lg-7 col-md-7 col-sm-7">
 								<a href="#">
-									<div style="margin: 20px 10px;" class="logo_text">Q-LEAR
-										<span>NING</span>
+									<div style="margin: 20px 10px;" class="logo_text">Q-LEAR<span>NING</span>
 									</div>
 								</a>
 							</div>
