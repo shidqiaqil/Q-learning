@@ -431,6 +431,10 @@
 		var jwb1 = document.querySelector('input[name="soal1"]:checked').value;
 		var jwb2 = document.querySelector('input[name="soal2"]:checked').value;
 		var jwb3 = document.querySelector('input[name="soal3"]:checked').value;
+		var jwb4 = document.querySelector('input[name="soal4"]:checked').value;
+		var jwb5 = document.querySelector('input[name="soal5"]:checked').value;
+		var jwb6 = document.querySelector('input[name="soal6"]:checked').value;
+		var jwb7 = document.querySelector('input[name="soal7"]:checked').value;
 		var status = new Array();
 		var jum;
 		if (jwb1 == "A" ){
