@@ -287,10 +287,10 @@
 
 	<body bgcolor=#ffffff>
 
-		
+		<!--onsubmit="return checkSoal(this)"-->
 		<div class="container" style="margin-top : 5%">
 			<h3 style="color:orangered;">Pilihlah salah satu jawaban yang benar dari soal dibawah ini </h3>
-			<form method="post" action="#" enctype="text/plain">
+			<form method="post"  enctype="text/plain">
 
 				<img src="images/sc_CASETools2_image004.jpg" style="margin-top:2%;margin-bottom:2%;">
 				<p>Untuk menjawab soal 1,2, dan 3 perhatikan gambar di atas! </p>
@@ -381,7 +381,7 @@
 				<br>
 				<br>
 				<br>
-				<input type="button" value="submit" onclick="return checkSoal(this)" class="btn btn-primary" style="margin-left:50%; margin-bottom:5%;">
+				<input type="button" value="submit" onclick="checkSoal(this)" class="btn btn-primary" style="margin-left:50%; margin-bottom:5%;">
 
 			</form>
 		</div>
@@ -444,7 +444,6 @@
 		};
 		if (jwb2 == "B"){
 			status[1]="BENAR";
-			hasil
 		} else {
 			status[1]="SALAH";
 		};
@@ -454,24 +453,24 @@
 			status[2]="SALAH";
 		};
 		if (jwb4 == "B"){
-			status[2]="BENAR";
+			status[3]="BENAR";
 		}else {
-			status[2]="SALAH";
+			status[3]="SALAH";
 		};
 		if (jwb5 == "B"){
-			status[2]="BENAR";
+			status[4]="BENAR";
 		}else {
-			status[2]="SALAH";
+			status[4]="SALAH";
 		};
 		if (jwb6 == "C"){
-			status[2]="BENAR";
+			status[5]="BENAR";
 		}else {
-			status[2]="SALAH";
+			status[5]="SALAH";
 		};
 		if (jwb7 == "B"){
-			status[2]="BENAR";
+			status[6]="BENAR";
 		}else {
-			status[2]="SALAH";
+			status[6]="SALAH";
 		};
 		//document.getElementById("p"+jum.toString()).innerHTML="No " + jum + "  " + status[0] + "<br/>";
 		for (var i=0; i<status.length; i++) {
