@@ -293,6 +293,7 @@
 			<form method="post" action="#" enctype="text/plain" onsubmit="return checkSoal(this)">
 
 				<img src="images/sc_CASETools2_image004.jpg" style="margin-top:2%;margin-bottom:2%;">
+				<p>Untuk menjawab soal 1,2, dan 3 perhatikan gambar di atas! </p>
 				<P id="p1" > 1. sytanx sql yang benar untuk menampilkan tabel first name dan last name adalah?
 					<BR>
 					<input type="radio" name="soal1" value="A">select firstname, lastname from employees
@@ -329,6 +330,53 @@
 					<BR>
 				</p>
 
+				<P id="p4" >4. Tamplikanlah seluruh field yang berada didalam tabel barang:
+					<BR>
+					<input type="radio" name="soal3" value="A">SQL> select * from barang;
+					<BR>
+					<input type="radio" name="soal3" value="B">SQL> select * to barang;
+					<BR>
+					<input type="radio" name="soal3" value="C">SQL> select * from table barang;
+					<BR>
+					<input type="radio" name="soal3" value="D">SQL> select * from new barang;
+					<BR>
+				</p>
+
+				<P id="p5" >5. Tampilkan kode barang,nama barang dari tabel barang yang jumalh stok nya 20:
+					<BR>
+					<input type="radio" name="soal3" value="A">SQL> SELECT ON KODE_BARANG,NAMA_BARANG FROM BARANG WHERE STOCK_BARANG=20;
+					<BR>
+					<input type="radio" name="soal3" value="B">SQL> SELECT KODE_BARANG,NAMA_BARANG FROM BARANG WHERE STOCK_BARANG=20;
+					<BR>
+					<input type="radio" name="soal3" value="C">SELECT TO KODE_BARANG,NAMA_BARANG FROM BARANG WHERE STOCK_BARANG=20;
+					<BR>
+					<input type="radio" name="soal3" value="D">SELECT FROM KODE_BARANG,NAMA_BARANG FROM BARANG WHERE STOCK_BARANG=20;
+					<BR>
+				</p>
+
+				<P id="p6" >6. Tampilkan last name,salary dari tabel employees yang salary nya lebih besar dari 12000:
+					<BR>
+					<input type="radio" name="soal3" value="A">SQL> select last_name,salary to employees where salary>12000;
+					<BR>
+					<input type="radio" name="soal3" value="B">SQL> select last_name,salary on employees where salary>12000;
+					<BR>
+					<input type="radio" name="soal3" value="C">select last_name,salary from employees where salary>12000;
+					<BR>
+					<input type="radio" name="soal3" value="D">SQL> select last_name,salary employees where salary>12000;
+					<BR>
+				</p>
+
+				<P id="p7" >7. Tampilkan salary tertinggi dengan kolom alias “GAJI TERTINGGI” dan untuk yang terendah dengan kolom alias “GAJI TERENDAH”:
+					<BR>
+					<input type="radio" name="soal3" value="A">Select value max(salary) as "GAJI TERTINGGI",min(salary) as "GAJI TERENDAH" from employees;
+					<BR>
+					<input type="radio" name="soal3" value="B">select max(salary) as "GAJI TERTINGGI",min(salary) as "GAJI TERENDAH" from employees;
+					<BR>
+					<input type="radio" name="soal3" value="C">select to max(salary) as "GAJI TERTINGGI",min(salary) as "GAJI TERENDAH" from employees;
+					<BR>
+					<input type="radio" name="soal3" value="D">select on max(salary) as "GAJI TERTINGGI",min(salary) as "GAJI TERENDAH" from employees;
+					<BR>
+				</p>
 				<br>
 				<br>
 				<br>
@@ -401,7 +449,26 @@
 		}else {
 			status[2]="SALAH";
 		};
-		
+		if (jwb4 == "B"){
+			status[2]="BENAR";
+		}else {
+			status[2]="SALAH";
+		};
+		if (jwb5 == "B"){
+			status[2]="BENAR";
+		}else {
+			status[2]="SALAH";
+		};
+		if (jwb6 == "C"){
+			status[2]="BENAR";
+		}else {
+			status[2]="SALAH";
+		};
+		if (jwb7 == "B"){
+			status[2]="BENAR";
+		}else {
+			status[2]="SALAH";
+		};
 		//document.getElementById("p"+jum.toString()).innerHTML="No " + jum + "  " + status[0] + "<br/>";
 		for (var i=0; i<status.length; i++) {
 			jum = i+1;
