@@ -32,7 +32,7 @@
 </style>
 
 <body>
-
+{elapsed_time}
 	<div class="super_container">
 
 		<!-- Header -->
@@ -290,7 +290,7 @@
 		<h3>Vocabulary Quiz I</h3>
 		<div class="container" style="margin-top : 5%">
 			<h3 style="color:orangered;">Pilihlah salah satu jawaban yang benar dari soal dibawah ini </h3>
-			<form method="post" action="#" enctype="text/plain" onsubmit="return checkSoal(this)">
+			<form method="post" action="#" enctype="text/plain">
 
 				<img src="images/sc_CASETools2_image004.jpg" style="margin-top:2%;margin-bottom:2%;">
 				<P id="p1" > 1. sytanx sql yang benar untuk menampilkan tabel first name dan last name adalah?
@@ -333,7 +333,7 @@
 				<br>
 				<br>
 				<br>
-				<input type="submit" value="submit" class="btn btn-primary" style="margin-left:50%; margin-bottom:5%;">
+				<input type="button" value="submit" onclick="return checkSoal(this)" class="btn btn-primary" style="margin-left:50%; margin-bottom:5%;">
 
 			</form>
 		</div>
