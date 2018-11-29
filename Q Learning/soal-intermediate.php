@@ -292,7 +292,10 @@
 			<h3 style="color:orangered;">Pilihlah salah satu jawaban yang benar dari soal dibawah ini </h3>
 			<form method="post"  enctype="text/plain">
 
+				<BR>
+				<BR>
 				<P id="p1" > 1. Operasi untuk mengambil informasi dari 2 tabel atau lebih dalam 1 waktu adalah pengertian dari ?
+					<BR>
 					<input type="radio" name="soal1" value="A">Follow
 					<BR>
 					<input type="radio" name="soal1" value="B">Join
